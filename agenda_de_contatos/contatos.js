@@ -12,7 +12,7 @@ function desenhar(lista) {
 
     lista.forEach(item => {
         let li = document.createElement("li");
-        li.innerHTML = item.nome + " - " + item.tel;
+        li.innerHTML = item.nome + " - " + item.telefone;
 
         let botao = document.createElement("button");
         botao.textContent = "x";
@@ -38,7 +38,6 @@ document.getElementById("cancelarBtn").onclick = () => {
     caixa.style.display = "none";
 };
 
-
 document.getElementById("salvarBtn").onclick = () => {
     let nome = document.getElementById("nomeInput").value.trim();
     let tel = document.getElementById("telInput").value.trim();
@@ -46,14 +45,13 @@ document.getElementById("salvarBtn").onclick = () => {
     if (nome === "" || tel === "") return;
 
     let lista = pegar();
-    lista.push({ nome, tel });
+    lista.push({ nome, telefone: tel });
 
     gravar(lista);
     desenhar(lista);
 
     caixa.style.display = "none";
 };
-
 
 document.getElementById("buscarBtn").onclick = () => {
     let termo = document.getElementById("busca").value.toLowerCase();
@@ -65,6 +63,4 @@ document.getElementById("verTodos").onclick = () => {
     desenhar(pegar());
 };
 
-
 desenhar(pegar());
-
