@@ -38,6 +38,7 @@ document.getElementById("cancelarBtn").onclick = () => {
     caixa.style.display = "none";
 };
 
+
 document.getElementById("salvarBtn").onclick = () => {
     let nome = document.getElementById("nomeInput").value.trim();
     let tel = document.getElementById("telInput").value.trim();
@@ -52,6 +53,7 @@ document.getElementById("salvarBtn").onclick = () => {
 
     caixa.style.display = "none";
 };
+
 
 document.getElementById("buscarBtn").onclick = () => {
     let termo = document.getElementById("busca").value.toLowerCase();
