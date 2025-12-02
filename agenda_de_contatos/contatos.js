@@ -1,4 +1,3 @@
-// "banco" local
 function pegar() {
     return JSON.parse(localStorage.getItem("ag_contatos") || "[]");
 }
@@ -68,3 +67,4 @@ document.getElementById("verTodos").onclick = () => {
 
 
 desenhar(pegar());
+
