@@ -5,26 +5,30 @@
     <title>Adicionar Contato</title>
     <link rel="stylesheet" href="adicionar.css" />
   </head>
+
   <body>
     <h1>Adicionar Contato</h1>
+
     <div class="blocos">
-      <form>
+      <form id="formAdd">
         <ul>
-        <li><label>Nome:</label></li>
-        <li></li><input type="text" /></li>
+          <li><label for="nome">Nome:</label></li>
+          <li><input id="nome" type="text" /></li>
 
-        <li><label>Telefone:</label></li>
-        <li><input type="text" /></li>
+          <li><label for="telefone">Telefone:</label></li>
+          <li><input id="telefone" type="text" /></li>
 
-        <li><label>Email:</label></li>
-        <li><input type="text" /></li>
+          <li><label for="email">Email:</label></li>
+          <li><input id="email" type="text" /></li>
 
-        <li><button type="submit">Adicionar</button>
-        <a href="contatos..html">voltar</a></li>
-      </ul>
+          <li>
+            <button type="submit">Adicionar</button>
+            <a href="contatos.html">Voltar</a>
+          </li>
+        </ul>
       </form>
     </div>
-<script src="adicionar.js"></script>
- 
+
+    <script src="adicionar.js"></script>
   </body>
 </html>
